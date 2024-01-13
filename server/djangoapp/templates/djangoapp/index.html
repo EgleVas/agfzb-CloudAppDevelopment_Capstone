@@ -35,7 +35,7 @@
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Username" name="username" >
                             <input type="password" class="form-control" placeholder="Password" name="psw" >
-                            <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+                            <button class="btn btn-primary" type="submit">Login</button>
                             <a class="btn btn-link" href="{% url 'djangoapp:registration' %}">Sign Up</a>
                         </div>
                     </form>
@@ -47,11 +47,11 @@
     </nav>
 
     {% if message %}
-    <div class="modal-body text-center alert alert-warning"> 
+    <div class="text-center alert alert-warning"> 
         {{ message }}
     </div>
     {% endif %}
-    
+
     <!--Add a dealer table here -->
 
     </body>
